@@ -40,3 +40,6 @@ console.log(isSquare(25))
 console.log(isSquare(26))
 
 
+function isSquare2(n) {
+    return Math.sqrt(n) % 1 === 0;
+}
