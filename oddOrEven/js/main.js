@@ -16,14 +16,18 @@
 // Have fun!
 
 
-function oddOrEven(array){
+// function oddOrEven(array){
     
 
-    if ( array.reduce((acc, cur) => acc + cur, 0) % 2 ){
-        return 'odd';
-    }else{
-        return 'even';
-    }
+//     if ( array.reduce((acc, cur) => acc + cur, 0) % 2 ){
+//         return 'odd';
+//     }else{
+//         return 'even';
+//     }
+// }
+
+function oddOrEven(array){
+    return array.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even'; 
 }
 
 console.log(oddOrEven([0]));
