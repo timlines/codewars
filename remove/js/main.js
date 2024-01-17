@@ -9,18 +9,28 @@
 // "Hi"      ---> "Hi"
 
 
-function remove (string) {
-    const word = string.split('')
+// function remove (string) {
+//     const word = string.split('')
 
 
-    if ( word[word.length - 1] === '!'){
-        word.pop();
-    }
+//     if ( word[word.length - 1] === '!'){
+//         word.pop();
+//     }
 
-    return word.join('');
+//     return word.join('');
     
+// }
+
+
+
+function remove(s) {
+    return s.endsWith('!') ? s.slice(0, -1) : s;
 }
 
 
 console.log(remove('Hi!'));
 console.log(remove('Hi!!!'));
+
+
+
+
