@@ -7,14 +7,24 @@
 // ('3♥') -> return 'hearts'
 // ('3♠') -> return 'spades'
 
+// function defineSuit(card){
+//     switch (card.split('').pop()){
+//         case '♣' : return 'clubs'
+//         case '♦' : return 'diamonds'
+//         case '♥' : return 'hearts'
+//         case '♠' : return 'spades'
+//         default:    return 'error';
+//     }
+// }
+
+
 function defineSuit(card){
-    switch (card.split('').pop()){
-        case '♣' : return 'clubs'
-        case '♦' : return 'diamonds'
-        case '♥' : return 'hearts'
-        case '♠' : return 'spades'
-        default:    return 'error';
-    }
+    return {
+        '♣' : 'clubs',
+        '♦' : 'diamonds',
+        '♥' : 'hearts',
+        '♠' : 'spades'
+    }[card.substr(-1)]
 }
 
 console.log(defineSuit('3♥'))
