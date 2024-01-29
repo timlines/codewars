@@ -15,12 +15,18 @@
 // text after  = "zzz"
 
 
+// function contamination(text, char){
+    
+//     return text.split('').map( (element) => element = char).join('');
+
+    
+
+// }
+
+
+
 function contamination(text, char){
-    
-    return text.split('').map( (element) => element = char).join('');
-
-    
-
+    return char.repeat(text.length);
 }
 
 
