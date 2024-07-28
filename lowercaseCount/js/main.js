@@ -26,3 +26,8 @@ function lowercaseCount(str){
 
 const string = 'Hello World';
 console.log(lowercaseCount(string)); // 8
+
+
+function lowercaseCount2(str){
+    return (str.match(/[a-z]/g) || []).length
+}
