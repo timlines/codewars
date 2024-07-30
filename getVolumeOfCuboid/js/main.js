@@ -6,3 +6,8 @@
 //     }
 // }
 
+class Kata {
+    static getVolumneOfCuboid(l, w, h) {
+        return l * w * h;
+    }
+}
