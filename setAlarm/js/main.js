@@ -10,10 +10,13 @@
 // false    | true     => false
 // false    | false    => false
 
-function setAlarm(employed, vacation){
-    return employed && !vacation;
+// function setAlarm(employed, vacation){
+//     return employed && !vacation;
 
-}
+// }
+
+
+const setAlarm = (employed, vacation) => employed && !vacation;
 
 console.log(setAlarm(true, true )); // => false , If we are employed and on vacation the alarm should NOT be set, we want to sleep in.
 console.log(setAlarm(true, false)); // => true
