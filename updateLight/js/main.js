@@ -5,18 +5,27 @@
 // For example, when the input is green, output should be yellow.
 
 
-function updateLight(current) {
-    //your code here!
-    let lights = ['green', 'yellow', 'red']
+// function updateLight(current) {
+//     //your code here!
+//     let lights = ['green', 'yellow', 'red']
     
-    for( let i = 0; i < lights.length; i++){
-        if ( current === lights[i] ){
-            i++;
-            return  i > lights.length - 1 ?  lights[0] : lights[i];
-        }
-    }
+//     for( let i = 0; i < lights.length; i++){
+//         if ( current === lights[i] ){
+//             i++;
+//             return  i > lights.length - 1 ?  lights[0] : lights[i];
+//         }
+//     }
 
 
+// }
+
+// console.log(updateLight('red'));
+
+
+function updateLight(current){
+    return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green';
 }
 
+console.log(updateLight('green'));
+console.log(updateLight('yellow'));
 console.log(updateLight('red'));
