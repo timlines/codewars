@@ -8,17 +8,22 @@
 //  1 --> [1]
 
 
-function monkeyCount(n){
+// function monkeyCount(n){
 
-    let arr = [];
+//     let arr = [];
     
-        for( let i = 1; i <= n; i++) {
-            arr.push(i);
-        }
+//         for( let i = 1; i <= n; i++) {
+//             arr.push(i);
+//         }
 
-    console.log(arr)
-    return arr;
+//     console.log(arr)
+//     return arr;
 
+// }
+
+
+function monkeyCount(n){
+    return Array.from({length:n}, (_, i) => i + 1)
 }
 
-monkeyCount(5);
+console.log(monkeyCount(5));
