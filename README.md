@@ -4,7 +4,7 @@ Codewars is a platform that I use to learn, train, and improve my coding skills 
 
 **Link to project:** https://www.codewars.com/users/timlines
 
-![Tim's Codewar progress](https://prnt.sc/pTUHns7lfm8W)
+![Tim's Codewar progress](/timsCodewarProgress.png)
 
 ## How It's Made:
 
