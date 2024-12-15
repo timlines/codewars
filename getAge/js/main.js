@@ -5,6 +5,10 @@
 // Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
 
 
-function getAge(inputString){
-    return +inputString[0]
+// function getAge(inputString){
+//     return +inputString[0]
+// }
+
+funtion getAge(inputSting){
+    return parseInt(inputString);
 }
