@@ -1,0 +1,9 @@
+function removeEveryOther(arr){
+  
+    return arr.filter(( element, index) => !(index % 2) )
+     
+     
+   }
+   
+
+
