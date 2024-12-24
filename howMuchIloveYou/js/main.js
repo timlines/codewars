@@ -13,39 +13,50 @@
 // Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
 
-function howMuchILoveYou(nbPetals) {
+// function howMuchILoveYou(nbPetals) {
     
-
-
+//     if ( nbPetals <= 6 ){
+//         if ( nbPetals === 1 ){
+//             return 'I love you'
+//         }
+//         else if ( nbPetals === 2 ){
+//             return 'a little'
+//         }
+//         else if ( nbPetals === 3 ){
+//             return 'a lot'
+//         }
+//         else if ( nbPetals === 4 ){
+//             return 'passionately'
+//         }
+//         else if ( nbPetals === 5 ){
+//             return 'madly'
+//         }
+//         else if ( nbPetals === 6 ){
+//             return 'not at all'
+//         }
+//     } else {
+//         let n = nbPetals - 6;
+//         return howMuchILoveYou(n);
+//     }
  
 
-    if ( nbPetals <= 6 ){
-        if ( nbPetals === 1 ){
-            return 'I love you'
-        }
-        else if ( nbPetals === 2 ){
-            return 'a little'
-        }
-        else if ( nbPetals === 3 ){
-            return 'a lot'
-        }
-        else if ( nbPetals === 4 ){
-            return 'passionately'
-        }
-        else if ( nbPetals === 5 ){
-            return 'madly'
-        }
-        else if ( nbPetals === 6 ){
-            return 'not at all'
-        }
-    } else {
-        let n = nbPetals - 6;
-        return howMuchILoveYou(n);
-    }
+// }
 
 
-   
+const phrases = [
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+    'not at all',
+]
 
+function howMuchILoveYou(n) {
+    return phrases[(n - 1) % phrases.length]
 }
 
-console.log(howMuchILoveYou(7));
+
+
+// Console Log
+console.log(howMuchILoveYou(8));
