@@ -1,19 +1,19 @@
-// function multipleOfIndex(array){
+function multipleOfIndex(array){
 
 
-//     let result = [];
+    let result = [];
 
-//     for ( let i = 0; i < array.length; i++ ){
+    for ( let i = 0; i < array.length; i++ ){
 
-//         if ( array[i] == 0 || array[i] % array.indexOf(array[i]) === 0 ) {
-//             result.push(array[i]);
-//         }
-//     }
+        if ( array[i] == 0 || array[i] % array.indexOf(array[i]) === 0 ) {
+            result.push(array[i]);
+        }
+    }
 
-//     return result;
+    return result;
     
    
-// }
+}
 
 // if false that means it is a multiple of
 
