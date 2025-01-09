@@ -10,11 +10,9 @@ Codewars is a platform that I use to learn, train, and improve my coding skills 
 
 **Tech used:** JavaScript
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+Codewars is where developers achieve code mastery through challange. In this challange I'll be primarily training on kata in the dojo written in javascript. This will include different data types, logic, algorithms, arrays, and much more. Codewars is an excellent resource for learning Javascript as it covers the fundaments of the language as well as clever solutions to unique problems.  
 
 ## Optimizations
-
-_(optional)_
 
 I started out doing challenges in the codewars website, over time I decided to add my challenges to my 100Devs project repository. Now that there are enough file in the project I've created a seperate respository to house all my codewar projects in a single place.
 
