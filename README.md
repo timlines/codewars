@@ -19,13 +19,3 @@ I started out doing challenges in the codewars website, over time I decided to a
 ## Lessons Learned:
 
 No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _wow I actually did it!_ moments. During this project of doing a codewars everyday has been a great learning experience.
-
-## Examples:
-
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
