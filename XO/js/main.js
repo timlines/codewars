@@ -1,15 +1,20 @@
-function XO(str){
-    let x = str.split('').filter((char) => char.toLowerCase() == 'x').join('').length;
-    let o = str.split('').filter((char) => char.toLowerCase() == 'o').join('').length;
+// function XO(str){
+//     let x = str.split('').filter((char) => char.toLowerCase() == 'x').join('').length;
+//     let o = str.split('').filter((char) => char.toLowerCase() == 'o').join('').length;
 
-    return x === o
+//     return x === o
 
-}
+// }
+
+// function XO(str) {
+//     let x = str.match(/x/gi);
+//     let o = str.match(/o/gi);
+//     return (x && x.length) === (o && o.length);
+// }
 
 function XO(str) {
-    let x = str.match(/x/gi);
-    let o = str.match(/o/gi);
-    return (x && x.length) === (o && o.length);
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
 }
 
 
