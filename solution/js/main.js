@@ -6,18 +6,24 @@
 // solution('abc', 'd') // returns false
 
 
+// function solution(str, ending){
+//     // does the frist arg end with the last arg?
+
+//     if ( ending === ''){
+//         return true;
+//     }
+
+//     str = str.slice(-ending.length)
+
+//     return str === ending
+// }
+
+
 function solution(str, ending){
-    // does the frist arg end with the last arg?
-
-    if ( ending === ''){
-        return true;
-    }
-
-    str = str.slice(-ending.length)
-
-    return str === ending
+    return str.endsWith(ending);
 }
-
 
 console.log(solution('abc', 'bc')); // return true
 console.log(solution('abc', 'd')); // return false
+
+
