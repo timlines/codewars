@@ -15,32 +15,46 @@
 
 
 
-function remove (string) {
-   let words = string.split(' ');
-   let result = [];
+// function remove (string) {
+//    let words = string.split(' ');
+//    let result = [];
 
-   for ( let word of words ){
-        // does this word only contain one exclamation point?
+//    for ( let word of words ){
+//         // does this word only contain one exclamation point?
         
-        // count the number of bangs in a word
-        const bangCount = word => [...word].filter( char => char === '!').length;
+//         // count the number of bangs in a word
+//         const bangCount = word => [...word].filter( char => char === '!').length;
 
-        if ( bangCount(word) != 1){
-            result.push(word)
-        }
-   }
+//         if ( bangCount(word) != 1){
+//             result.push(word)
+//         }
+//    }
 
-   return result.join(' ')
+//    return result.join(' ')
 
-}
+// }
+
+// function remove(string){
+//     return string.split(' ').filter(i => i.split('!'))
+// }
+
+function remove(string) {
+    return string.split(' ')
+                 .filter(word => {
+                    const bangCount = word => word.split('!').length -1;
+                    return bangCount(word) !== 1;
+                    
+                }).join(' ');
+} 
 
 
 // Test cases
 
+console.log(remove('Hi Hi! Hi')); // ""
+// console.log(remove('hi!')); // ""
+// console.log(remove('hi! Hi!')); // ""
+// console.log(remove('hi! Hi! Hi!')); // ""
+// console.log(remove('Hi Hi! Hi!')); // "Hi"
+// console.log(remove('Hi! Hi!! Hi!')); // "Hi!!"
+// console.log(remove('Hi! !Hi!! Hi!')); // "Hi!!"
 
-console.log(remove('hi!')); // ""
-console.log(remove('hi! Hi!')); // ""
-console.log(remove('hi! Hi! Hi!')); // ""
-console.log(remove('Hi Hi! Hi!')); // "Hi"
-console.log(remove('Hi! Hi!! Hi!')); // "Hi!!"
-console.log(remove('Hi! !Hi!! Hi!')); // "Hi!!"
