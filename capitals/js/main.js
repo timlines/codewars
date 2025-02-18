@@ -18,9 +18,6 @@ let capitals = function (word) {
     }
 
     return result;
-
-
-
 }
 
 
