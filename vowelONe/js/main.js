@@ -13,31 +13,35 @@
 // Takes in a string 'abcedios'
 // Returns a  string  of 1 and 0's '101010101'
 
-function vowelOne(s){
+// function vowelOne(s){
 
-    // create a result
+//     // create a result
 
-    let result = [];
+//     let result = [];
 
-    s.toLowerCase().split('');
+//     s.toLowerCase().split('');
 
-    for ( let element of s ){
-        if( element === 'a' ||
-            element === 'e' ||
-            element === 'i' || 
-            element === 'o' ||
-            element === 'u' ){
-            result.push(1)
-        }else {
-            result.push(0);
-        }
+//     for ( let element of s ){
+//         if( element === 'a' ||
+//             element === 'e' ||
+//             element === 'i' || 
+//             element === 'o' ||
+//             element === 'u' ){
+//             result.push(1)
+//         }else {
+//             result.push(0);
+//         }
     
-    }
+//     }
 
-    return result.join('');
+//     return result.join('');
 
+// }
+
+
+function vowelOne(s){
+    return s.replace(/[^aeiou]/gi, 'o').replace(/[^\d]/g, '1');
 }
-
 
 console.log(vowelOne('abceios')) // '1001110'
 
