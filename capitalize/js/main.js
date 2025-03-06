@@ -16,62 +16,70 @@
 // input is a string, lowercase, no numbers, no capital letters, no spaces
 // output will be an array with even and odd indexes capitalized.
 
-function capitalize(s){
+// function capitalize(s){
 
-    let result = [];
-    let odd = [];
-    let even = [];
-    // Loop through the string
+//     let result = [];
+//     let odd = [];
+//     let even = [];
+//     // Loop through the string
 
-    // create element
-    for( let i = 0; i < s.length; i++){
+//     // create element
+//     for( let i = 0; i < s.length; i++){
         
-        // if odd capitalize
-        // console.log(char)
-        let index = i;
-        if ( !(index % 2) ){
-            char = s[i].toUpperCase();
-            odd.push(char);
-        }else{
+//         // if odd capitalize
+//         // console.log(char)
+//         let index = i;
+//         if ( !(index % 2) ){
+//             char = s[i].toUpperCase();
+//             odd.push(char);
+//         }else{
             
-            // if even leave as lowercase
-            odd.push(s[i])
-        }
+//             // if even leave as lowercase
+//             odd.push(s[i])
+//         }
 
-    }
-    // join the element to 'odd'
-    odd = odd.join('');
+//     }
+//     // join the element to 'odd'
+//     odd = odd.join('');
    
 
 
-    // next will do the oppisite for the second element
+//     // next will do the oppisite for the second element
 
-    // if even capitalize
+//     // if even capitalize
 
 
-    for( let i = 0; i < s.length; i++){
+//     for( let i = 0; i < s.length; i++){
         
-        // if even capitalize
-        let index = i
-        if ( index % 2 ){
-            char = s[i].toUpperCase();
-            even.push(char);
-        }else{
-            // if odd leave lowercase
-            even.push(s[i])
-        }
+//         // if even capitalize
+//         let index = i
+//         if ( index % 2 ){
+//             char = s[i].toUpperCase();
+//             even.push(char);
+//         }else{
+//             // if odd leave lowercase
+//             even.push(s[i])
+//         }
 
-    }
-    even = even.join('');
+//     }
+//     even = even.join('');
 
-    // return an array with two strings, one in each element w/ odd/even indexes capitalized
+//     // return an array with two strings, one in each element w/ odd/even indexes capitalized
 
-    // push the element to result
+//     // push the element to result
     
     
-    result.push(odd);
-    result.push(even);
-    return result; // ['AbCdEf', 'aBcDeF']
+//     result.push(odd);
+//     result.push(even);
+//     return result; // ['AbCdEf', 'aBcDeF']
+// }
+
+
+function capitalize(s){
+    const odd = s.split('').map((l, i) => !(i % 2) ? l.toUpperCase() : l).join('');
+    const even = s.split('').map((l, i) => i % 2 ? l.toUpperCase() : l).join('');
+    return [odd, even]
+
 }
 
 
