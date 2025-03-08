@@ -1,6 +1,11 @@
+// function testEven(n){
+//     return n % 2 ? false : true;
+// }
+
 function testEven(n){
-    return n % 2 ? false : true;
+    return !(n %2 );
 }
+
 
 
 console.log(testEven(0)) // returns true
