@@ -24,20 +24,25 @@
 
 
 
-function countWords(str) {
+// function countWords(str) {
 
 
-    // trim the whitespace
-    str.trim().split('').join()
-    str = str.replace(/\s+/g, ' ')
-    // return str 
+//     // trim the whitespace
+//     str.trim().split('').join()
+//     str = str.replace(/\s+/g, ' ')
+//     // return str 
 
-    if ( str == ''){
-        return 0
-    }else{
-        return str.split(' ').length    
-    }
+//     if ( str == ''){
+//         return 0
+//     }else{
+//         return str.split(' ').length    
+//     }
 
+// }
+
+
+function countWords(str){
+    return (str.match(/[^\s]+/g) || []).length;
 }
 
 
