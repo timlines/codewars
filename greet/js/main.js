@@ -71,7 +71,7 @@ function greet(language){
         "welsh": "Croeso"
     }
 
-    return greeting[language] ? greeting[language] : greeting.english;
+    return greeting[language] || greeting.english;
 }
 
 console.log(greet('english'));
